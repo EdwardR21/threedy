@@ -54,9 +54,9 @@ const getTotalSeconds = (
         result = parseInt(timeEntity.state) || 0;
     } else {
         if(timeEntity.state){
-            const [hours, minutes, seconds] = timeEntity.state.split(':');
-            result = (+hours) * 60 * 60 + (+minutes) * 60 + (+seconds);
-
+            //const [hours, minutes, seconds] = timeEntity.state.split(':');
+            //result = (+hours) * 60 * 60 + (+minutes) * 60 + (+seconds);
+            result = parseInt(timeEntity.state);
         } else {
             result = 0;
         }
